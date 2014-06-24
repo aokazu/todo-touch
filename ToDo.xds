@@ -1,0 +1,55 @@
+{
+    "name": "ToDo",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.4.84",
+            "frameworkVersion": "2.3.1.410"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "3.0.4",
+    "xdsBuild": 1386,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "touch23",
+    "viewOrderMap": {
+        "view": [
+            "0b20ae62-135a-49b9-9795-d543b5eeae76",
+            "57c3436c-1ed3-4f81-a76a-bc17ea6894b9"
+        ],
+        "store": [
+            "685a9f25-8fc7-410a-8a9e-b9627acc14e3"
+        ],
+        "controller": [
+            "d1846ed6-5a1a-49b4-a34e-bff8a09e9400"
+        ],
+        "model": [
+            "8d10280f-46da-4b8d-b48f-bbd33dcb7b79"
+        ],
+        "resource": [
+            "831846ea-2480-4bef-8ffe-bd91283cc94c",
+            "9bcddbfa-824b-41fa-b15c-9ad6f5b51497"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

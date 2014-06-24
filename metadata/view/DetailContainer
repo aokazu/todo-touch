@@ -1,0 +1,187 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "detailcontainer",
+        "designer|userClassName": "DetailContainer",
+        "id": null,
+        "itemId": "mycontainer",
+        "layout": "fit"
+    },
+    "designerId": "57c3436c-1ed3-4f81-a76a-bc17ea6894b9",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top"
+            },
+            "designerId": "b621073d-7e07-4699-b786-78a66a1c89bb",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "back",
+                        "id": "BackButton",
+                        "text": "戻る",
+                        "ui": "back"
+                    },
+                    "designerId": "28bda5cc-aa45-4953-b12d-c49ac75dacf5"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "designer|uiInterfaceName": "decline",
+                        "iconCls": "trash",
+                        "id": "DeleteButton",
+                        "text": "",
+                        "ui": "decline"
+                    },
+                    "designerId": "0fdb7955-9402-459a-b62c-fbe27c57b5b6"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "2fa60707-7847-4a20-a7d3-823ebea0fa2b",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "タスク"
+                    },
+                    "designerId": "f596c20d-f3ef-42d0-aa50-03b851b6f8c6",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "label": "タイトル",
+                                "name": "title"
+                            },
+                            "designerId": "4d031e8e-8263-4a77-8892-185e17b8d170"
+                        },
+                        {
+                            "type": "Ext.field.Number",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "label": "所要時間",
+                                "name": "require"
+                            },
+                            "designerId": "e2cc1027-1d51-48a7-a4af-795fc18129d7"
+                        },
+                        {
+                            "type": "Ext.field.DatePicker",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dateFormat": "Y/m/d",
+                                "label": "期限",
+                                "name": "deadline",
+                                "placeHolder": "yyyy/mm/dd"
+                            },
+                            "designerId": "35eddfe5-ad56-42dc-8f59-2d3b625d84b9",
+                            "cn": [
+                                {
+                                    "type": "Ext.picker.Date",
+                                    "reference": {
+                                        "name": "picker",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "yearFrom": 2014,
+                                        "yearTo": 2025
+                                    },
+                                    "designerId": "9ec387d3-baac-469c-89d1-9a91e0782255",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "doneButton",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Done"
+                                            },
+                                            "designerId": "ba3d8bf6-74ea-47fd-ba55-e8a429cec79b"
+                                        },
+                                        {
+                                            "type": "Ext.Button",
+                                            "reference": {
+                                                "name": "cancelButton",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Cancel"
+                                            },
+                                            "designerId": "2bcf0840-9c43-49bd-9d16-090414586f65"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "action",
+                        "id": "SaveButton",
+                        "margin": ".6em",
+                        "text": "保存",
+                        "ui": "action"
+                    },
+                    "designerId": "b3bcf66a-7588-4cbf-9ea2-79b82b9bc451"
+                }
+            ]
+        }
+    ]
+}

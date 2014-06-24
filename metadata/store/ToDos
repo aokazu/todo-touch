@@ -1,0 +1,29 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "ToDos",
+        "model": "ToDo",
+        "storeId": "ToDos"
+    },
+    "designerId": "685a9f25-8fc7-410a-8a9e-b9627acc14e3",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "todo"
+            },
+            "designerId": "8560a6dc-4f26-4fd2-91df-c44e9db9e83b"
+        }
+    ]
+}

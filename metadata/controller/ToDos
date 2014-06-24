@@ -1,0 +1,244 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ToDos",
+        "requires": [
+            "Ext.MessageBox"
+        ]
+    },
+    "designerId": "d1846ed6-5a1a-49b4-a34e-bff8a09e9400",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "list#mylist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "",
+                    "var detail = this.getDetailContainer();",
+                    "",
+                    "if (!detail) {",
+                    "    detail = Ext.widget('detailcontainer');",
+                    "}",
+                    "",
+                    "// DateFieldは文字型の値を受けつけないため、変換します。",
+                    "var dateString = record.get('deadline');",
+                    "if (dateString) {",
+                    "    record.set('deadline', new Date(dateString));",
+                    "}",
+                    "",
+                    "detail.down('formpanel').setRecord(record);",
+                    "",
+                    "this.getDeleteButton().show();",
+                    "",
+                    "Ext.Viewport.animateActiveItem(detail, {",
+                    "    type: 'slide',",
+                    "    direction: 'left'",
+                    "});",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "c645eb05-fe7e-42a8-a32d-794627e5dc09"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "detailContainer",
+                "selector": "detailcontainer",
+                "xtype": null
+            },
+            "designerId": "217d8c75-e483-46fc-aeab-5e291fa39dc1"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#BackButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onBackButtonTap",
+                "implHandler": [
+                    "",
+                    "var list = this.getListContainer();",
+                    "",
+                    "Ext.Viewport.animateActiveItem(list, {",
+                    "    type: 'slide',",
+                    "    direction: 'right'",
+                    "});",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "designerId": "7e4673e1-661b-4844-aa4c-96bd35cec9c7"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "listContainer",
+                "selector": "listcontainer"
+            },
+            "designerId": "1fcb451a-5583-4bbf-b19d-324a88335734"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#AddButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onAddButtonTap",
+                "implHandler": [
+                    "",
+                    "var detail = this.getDetailContainer();",
+                    "",
+                    "if (!detail) {",
+                    "    detail = Ext.widget('detailcontainer');",
+                    "}",
+                    "",
+                    "var record = Ext.create('ToDo.model.ToDo');",
+                    "",
+                    "detail.down('formpanel').setRecord(record);",
+                    "",
+                    "this.getDeleteButton().hide();",
+                    "",
+                    "Ext.Viewport.animateActiveItem(detail, {",
+                    "    type: 'slide',",
+                    "    direction: 'left'",
+                    "});",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "designerId": "c2e71fba-5033-43ec-be4f-171a0c9ab01b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#SaveButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onSaveButtonTap",
+                "implHandler": [
+                    "",
+                    "var detail = this.getDetailContainer(),",
+                    "    form = detail.down('formpanel'),",
+                    "    record = form.getRecord(),",
+                    "    values = form.getValues();",
+                    "",
+                    "record.set(values);",
+                    "",
+                    "var store = Ext.getStore('ToDos');",
+                    "",
+                    "store.add(record);",
+                    "",
+                    "store.sync({",
+                    "    callback: function() {",
+                    "        // alert('保存しました。');",
+                    "",
+                    "        Ext.Msg.alert('', '保存しました。', function() {",
+                    "            Ext.Viewport.animateActiveItem(list, {",
+                    "                type: 'slide',",
+                    "                direction: 'right'",
+                    "            });",
+                    "",
+                    "        });",
+                    "    }",
+                    "});",
+                    "",
+                    "var list = this.getListContainer();",
+                    "",
+                    "// Ext.Viewport.animateActiveItem(list, {",
+                    "//     type: 'slide',",
+                    "//     direction: 'right'",
+                    "// });",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "designerId": "04046274-4151-41d5-b546-615cf8051a1c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#DeleteButton",
+                "designer|targetType": "Ext.Button",
+                "fn": "onDeleteButtonTap",
+                "implHandler": [
+                    "",
+                    "var detail = this.getDetailContainer(),",
+                    "    list = this.getListContainer(),",
+                    "    form = detail.down('formpanel'),",
+                    "    record = form.getRecord();",
+                    "",
+                    "var store = Ext.getStore('ToDos');",
+                    "",
+                    "store.remove(record);",
+                    "",
+                    "store.sync({",
+                    "    callback: function() {",
+                    "        Ext.Msg.alert('', '削除しました。', function() {",
+                    "            Ext.Viewport.animateActiveItem(list, {",
+                    "                type: 'slide',",
+                    "                direction: 'right'",
+                    "            });",
+                    "        });",
+                    "    }",
+                    "});",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "designerId": "1d8e694f-2227-4db1-b788-a956ef08ee71"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "deleteButton",
+                "selector": "button#DeleteButton"
+            },
+            "designerId": "278ec67d-528c-4c6b-9f2e-1a2eaa2312f7"
+        }
+    ]
+}
