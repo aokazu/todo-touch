@@ -4,10 +4,10 @@ todo-touch
 「タスク管理」アプリは、タスクデータを閲覧、追加、編集、削除するアプリケーションです。一覧画面と詳細画面の2つの画面を持ち、一覧のレコードをタップして詳細画面に遷移します。詳細画面では、詳細情報の参照とデータの更新を行います。アプリで扱うデータはWebブラウザのローカルストレージに保存します。
 
 <div>
-    <img src="todo/hero1.png" width="24%"/>
-    <img src="todo/hero2.png" width="24%"/>
-    <img src="todo/hero3.png" width="24%"/>
-    <img src="todo/hero4.png" width="24%"/>
+    <img src="hero1.png" width="24%"/>
+    <img src="hero2.png" width="24%"/>
+    <img src="hero3.png" width="24%"/>
+    <img src="hero4.png" width="24%"/>
 </div>
 
 ## 事前準備
