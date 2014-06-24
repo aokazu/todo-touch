@@ -1,0 +1,81 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "listcontainer",
+        "designer|userClassName": "ListContainer",
+        "itemId": "mycontainer",
+        "layout": "fit"
+    },
+    "designerId": "0b20ae62-135a-49b9-9795-d543b5eeae76",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "タスク管理"
+            },
+            "designerId": "a002780d-50b8-436b-893e-1bd8c5e4ea01",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "designer|uiInterfaceName": "confirm",
+                        "iconCls": "add",
+                        "id": "AddButton",
+                        "text": "",
+                        "ui": "confirm"
+                    },
+                    "designerId": "77af6def-e1b6-40d1-8dab-b80ca74bae94"
+                }
+            ]
+        },
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|createAlias": null,
+                "itemId": "mylist",
+                "store": "ToDos"
+            },
+            "designerId": "adfafe23-57ea-40ed-a058-274cc5e40694",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div>{title}</div>"
+                        ]
+                    },
+                    "designerId": "a2f3bac1-26f8-49d1-9ace-95b631c27732"
+                }
+            ]
+        }
+    ]
+}

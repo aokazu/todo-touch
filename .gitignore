@@ -1,0 +1,17 @@
+# *** folders
+touch/
+ext/
+
+# *** files
+.DS_Store
+Thumbs.db
+
+# *** Sencha Architect
+.sass-cache/
+build/
+*.$old
+
+# see http://docs.sencha.com/architect/3/#!/guide/team_dev
+.architect
+.sencha/
+.sencha_backup/

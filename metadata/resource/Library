@@ -1,0 +1,14 @@
+{
+    "type": "libraryresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "basePath": "touch/",
+        "designer|userClassName": "Library",
+        "theme": "MyDefaultTheme"
+    },
+    "designerId": "831846ea-2480-4bef-8ffe-bd91283cc94c"
+}

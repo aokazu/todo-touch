@@ -1,0 +1,62 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ToDo"
+    },
+    "designerId": "8d10280f-46da-4b8d-b48f-bbd33dcb7b79",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "designerId": "7a0997d6-dba0-4450-8266-04a4fb0f18ab"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title"
+            },
+            "designerId": "29e65188-78aa-4d49-b39a-b71b78aa1dcf"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "require"
+            },
+            "designerId": "43520b53-0bf2-4b4d-b1a5-4b19a5908e88"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deadline"
+            },
+            "designerId": "a03d6ec2-1f92-49e0-a3f4-d0cf502362d1"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+   "name": "ToDo",
+   "indexHtmlPath": "index.html",
+   "url": null,
+   "js": [
+      {
+         "path": "touch/sencha-touch.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "bootstrap.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "app.js",
+         "bundle": true,
+         "update": "delta"
+      }
+   ],
+   "css": [
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "theme/sencha-touch-9bcddbfa-824b-41fa-b15c-9ad6f5b51497.css",
+         "_architect_active_theme": true
+      }
+   ],
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      "resources/images",
+      "resources/icons",
+      "resources/startup"
+   ],
+   "ignore": [
+      ".svn$"
+   ],
+   "archivePath": "archive",
+   "requires": [],
+   "id": "3ef745f9-770e-4deb-8adf-69b4b7881f81"
+}

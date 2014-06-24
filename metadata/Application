@@ -1,0 +1,25 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "ToDos"
+        ],
+        "models": [
+            "ToDo"
+        ],
+        "name": "ToDo",
+        "stores": [
+            "ToDos"
+        ],
+        "views": [
+            "ListContainer",
+            "DetailContainer"
+        ]
+    },
+    "designerId": "application"
+}
