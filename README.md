@@ -10,6 +10,10 @@
     <img src="hero4.png" width="24%"/>
 </div>
 
+このアプリケーションの実装方法については、以下のチュートリアルで詳しく解説しています。
+
+[[Sencha茶房] Sencha Touchチュートリアル「タスク管理」](http://www.canon-its.co.jp/senchasabo/tutorial/touch/todo.html)
+
 ## 事前準備
 
 以下のソフトウェアをご利用マシンにインストールして下さい。
