@@ -29,10 +29,12 @@ Ext.define('ToDo.model.ToDo', {
                 name: 'title'
             },
             {
-                name: 'require'
+                name: 'require',
+                type: 'int'
             },
             {
-                name: 'deadline'
+                name: 'deadline',
+                type: 'date'
             }
         ]
     }

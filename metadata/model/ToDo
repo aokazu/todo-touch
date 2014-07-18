@@ -42,7 +42,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "require"
+                "name": "require",
+                "type": "int"
             },
             "designerId": "43520b53-0bf2-4b4d-b1a5-4b19a5908e88"
         },
@@ -54,7 +55,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "deadline"
+                "name": "deadline",
+                "type": "date"
             },
             "designerId": "a03d6ec2-1f92-49e0-a3f4-d0cf502362d1"
         }
