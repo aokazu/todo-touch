@@ -54,12 +54,6 @@ Ext.define('ToDo.controller.ToDos', {
             detail = Ext.widget('detailcontainer');
         }
 
-        // DateFieldは文字型の値を受けつけないため、変換します。
-        var dateString = record.get('deadline');
-        if (dateString) {
-            record.set('deadline', new Date(dateString));
-        }
-
         detail.down('formpanel').setRecord(record);
 
         this.getDeleteButton().show();

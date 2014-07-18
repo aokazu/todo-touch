@@ -16,7 +16,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
-  "ToDo": "app"
+  "ToDo": "app",
+  "ToDo.model.ToDo": "app/model/ToDo.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractComponent": [],
@@ -638,8 +639,12 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "ToDo.view.Main": [],
-  "ToDo.view.MyContainer": []
+  "ToDo.controller.ToDos": [],
+  "ToDo.model.ToDo": [],
+  "ToDo.store.ToDos": [],
+  "ToDo.view.DetailContainer": [],
+  "ToDo.view.ListContainer": [],
+  "ToDo.view.Main": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1358,8 +1363,16 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "ToDo.controller.ToDos": [],
+  "ToDo.model.ToDo": [],
+  "ToDo.store.ToDos": [],
+  "ToDo.view.DetailContainer": [
+    "widget.detailcontainer"
+  ],
+  "ToDo.view.ListContainer": [
+    "widget.listcontainer"
+  ],
   "ToDo.view.Main": [
     "widget.main"
-  ],
-  "ToDo.view.MyContainer": []
+  ]
 });
